@@ -24,7 +24,7 @@ CREATE TABLE tests (
 
 CREATE TABLE test_results
 (
-  result_id INT PRIMARY KEY,
+  result_id SERIAL PRIMARY KEY,
   test_id   INT REFERENCES tests (test_id),
   grade     INT NOT NULL
 );
@@ -38,7 +38,7 @@ CREATE TABLE user_test_results
 
 
 CREATE TABLE questions (
-  question_id   INT PRIMARY KEY,
+  question_id   SERIAL PRIMARY KEY,
   test_id       INT REFERENCES tests (test_id),
   question_text TEXT NOT NULL
 );

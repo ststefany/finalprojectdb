@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset admin:2
+--changeset admin:3
 
 INSERT INTO subjects (subject_name) VALUES ('maths');
 INSERT INTO subjects (subject_name) VALUES ('biology');
